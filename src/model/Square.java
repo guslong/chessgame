@@ -1,12 +1,10 @@
 package model;
 
-
 public class Square {
 
 	private Piece piece;
 	private Color color;
 	
-
 	// returns true is there is a piece on the square
 	
 	public boolean hasPiece() {
@@ -22,13 +20,16 @@ public class Square {
 	public Piece getPiece() {
 		return piece;
 	}
+	
+	public void setPiece(Piece piece) {
+		this.piece = piece;
+	}
+	
+
 	public Color getColor() {
 		return color;
 	}
 
-	public void setPiece(Piece piece) {
-		this.piece = piece;
-	}
 	public void setColor(Color color) {
 		this.color = color;
 	}

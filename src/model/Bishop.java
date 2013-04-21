@@ -6,6 +6,7 @@ public class Bishop extends Piece {
 
 	Color color;
 
+
 	public Bishop(Color col) {
 		this.color = col;
 	}
