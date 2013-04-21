@@ -5,11 +5,13 @@ public class Board {
 	public static final int NUM_SQUARES = 64;
 	Square[] squares = new Square[NUM_SQUARES];
 
-	Player whitePlayer;
-	Player blackPlayer;
+	public Player whitePlayer;
+	public Player blackPlayer;
 	
-	public Board() {
+	public Board (Player white, Player black) {
 		setUpBoard();
+		this.whitePlayer = white;
+		this.blackPlayer = black;
 
 	}
 
@@ -28,6 +30,7 @@ public class Board {
 		}
 	}
 
+	
 
 	public Square[] getSquares() {
 		return squares;
