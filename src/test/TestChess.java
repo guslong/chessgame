@@ -49,27 +49,37 @@ public class TestChess {
 	@Test
 	public void create_whiteplayer() {
 		Game g = new Game();
-		Player whitePlayer = new WhitePlayer();
+		WhitePlayer whitePlayer = new WhitePlayer();
 
 		
 	}
 	
 	@Test
 	public void createBoardandAddTwoPlayers() {
-		Player p1 = new WhitePlayer();
-		Player p2 = new BlackPlayer();
+		WhitePlayer p1 = new WhitePlayer();
+		BlackPlayer p2 = new BlackPlayer();
 		Board b = new Board(p1, p2);
 	}
 	
 	@Test
 	public void getAPieceObject() {
-		Player p1 = new WhitePlayer();
+		WhitePlayer p1 = new WhitePlayer();
 		assertNotNull(p1.bishop1);
 			
 	}
 
+	@Test
+	public void getAPlayerObjectFromBoardClass() {
+		Game g = new Game();
+		assertNotNull(g.getBoard().blackPlayer);
+		
+	}
 	
-	
+	@Test
+	public void getAPieceFromBoardClass() {
+		Game g = new Game();
+		assertNotNull(g.getBoard().blackPlayer.bishop1);
+	}
 	
 	
 

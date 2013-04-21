@@ -6,6 +6,9 @@ public class Game {
 
 	public Game () {
 		
+		// initializes the board and creates two players
+		setBoard(new Board(new WhitePlayer(), new BlackPlayer()));
+		
 	}
 	
 		// loops through the array of squares and prints the piece that is on that square
