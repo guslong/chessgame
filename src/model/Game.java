@@ -10,11 +10,14 @@ public class Game {
 		setBoard(new Board(new WhitePlayer(), new BlackPlayer()));
 		
 	}
+
+	
+	/* was a great piece of code, but for now it doesn't belong here
+	public void printGameState() {
 	
 		// loops through the array of squares and prints the piece that is on that square
-			// does not yet show the color of the piece
-	public void printGameState() {
-
+		/ does not yet show the color of the piece
+		
 		
 		System.out.println("----------- game state ---------\n");
 		System.out.println("   a   b   c   d   e   f   g   h");
@@ -30,8 +33,9 @@ public class Game {
 			}
 			System.out.println();
 		}
-
 	}
+*/
+	
 	
 	// getters and setters
 	

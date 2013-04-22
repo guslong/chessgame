@@ -79,8 +79,17 @@ public class TestChess {
 	public void getAPieceFromBoardClass() {
 		Game g = new Game();
 		assertNotNull(g.getBoard().blackPlayer.bishop1);
+		
+	}
+	
+	@Test
+	public void setPositionOfAPiece() {
+		Game g = new Game();
+		g.getBoard().blackPlayer.bishop1.setPosition(Board.A1);
+		
 	}
 	
 	
 
+	
 }
