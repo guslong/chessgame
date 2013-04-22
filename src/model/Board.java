@@ -14,6 +14,7 @@ public class Board {
 	public static final int F1 = 5;
 	public static final int G1 = 6;
 	public static final int H1 = 7;
+	public static final int A2 = 8;
 
 	
 	public Board (WhitePlayer white, BlackPlayer black) {
